@@ -8,12 +8,8 @@ jobs:
         steps:
         - name: first-step
           run: echo "hello action"
-        
-        - name: checkout
-          uses: actions/checkout@v4
-
-        - name: ls
-          run: ls -lrtha
-        
-        - name: pwd
-          run: pwd
+    second_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: first-step
+          run: echo "hello action"
